@@ -1,6 +1,6 @@
 const EventEmitter = require('events');
 
-const myEmitter = new EventEmitter();
+const myEmitter = new EventEmitter(console.log('emitter`'));
 
 myEmitter.setMaxListeners(1);
 
